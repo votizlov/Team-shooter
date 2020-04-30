@@ -17,3 +17,5 @@ MonoBehaviour:
   right: 275
   left: 276
   jump: 32
+  fire: 323
+  reload: 114

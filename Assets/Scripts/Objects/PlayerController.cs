@@ -7,6 +7,8 @@ public class PlayerController : MonoBehaviour
 {
     [SerializeField] private SettingsData settings;
 
+    [SerializeField] private InventoryController inventoryController;
+
     [SerializeField] private Rigidbody rigidbody;
 
     [SerializeField] private Camera camera;
@@ -26,29 +28,38 @@ public class PlayerController : MonoBehaviour
         if (Input.GetKey(settings.forward))
         {
             applyAcceleration(gameObject.transform.forward);
-        } else if (Input.GetKey(settings.backward))
+        }
+        else if (Input.GetKey(settings.backward))
         {
             applyAcceleration(-gameObject.transform.forward);
-        } else if (Input.GetKey(settings.left))
+        }
+        else if (Input.GetKey(settings.left))
         {
-            applyAcceleration(Quaternion.Euler(0,-90,0)*gameObject.transform.forward);
-        } else if (Input.GetKey(settings.right))
+            applyAcceleration(Quaternion.Euler(0, -90, 0) * gameObject.transform.forward);
+        }
+        else if (Input.GetKey(settings.right))
         {
-            applyAcceleration(Quaternion.Euler(0,90,0)*gameObject.transform.forward);
-        } 
+            applyAcceleration(Quaternion.Euler(0, 90, 0) * gameObject.transform.forward);
+        }
+
         if (Input.GetKey(settings.jump))
         {
             applyAcceleration(gameObject.transform.up);
         }
 
+        if (Input.GetKey(settings.fire))
+        {
+            inventoryController.FireCurrentGun();
+        }
+
         yaw += speedH * Input.GetAxis("Mouse X");
         pitch -= speedV * Input.GetAxis("Mouse Y");
-        camera.transform.eulerAngles = new Vector3(pitch,yaw,0f);
-        transform.eulerAngles = new Vector3(0f,yaw,0f);
+        camera.transform.eulerAngles = new Vector3(pitch, yaw, 0f);
+        transform.eulerAngles = new Vector3(0f, yaw, 0f);
     }
 
     private void applyAcceleration(Vector3 dir)
     {
-        rigidbody.AddForce(dir*speed);
+        rigidbody.AddForce(dir * speed);
     }
 }

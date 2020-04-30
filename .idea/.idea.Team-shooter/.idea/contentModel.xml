@@ -34,13 +34,20 @@
           <e p="DamageSystem" t="Include">
             <e p="AttackingObject.cs" t="Include" />
             <e p="AttackManager.cs" t="Include" />
+            <e p="AttackTypes.cs" t="Include" />
             <e p="DamagableObject.cs" t="Include" />
-            <e p="DamageManager.cs" t="Include" />
           </e>
           <e p="Data" t="Include">
             <e p="SettingsData.cs" t="Include" />
           </e>
           <e p="Objects" t="Include">
+            <e p="Gun" t="Include">
+              <e p="Gun.cs" t="Include" />
+              <e p="GunTypes.cs" t="Include" />
+            </e>
+            <e p="Items" t="Include">
+              <e p="InventoryController.cs" t="Include" />
+            </e>
             <e p="PlayerController.cs" t="Include" />
           </e>
           <e p="ProceduralLegPlacement" t="Include">

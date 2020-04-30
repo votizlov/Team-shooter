@@ -4,15 +4,15 @@ using UnityEngine;
 
 public class AttackManager : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    [SerializeField]static GameObject pistolShotEffect;
+    public void Attack(AttackingObject attackingObject)
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        switch (attackingObject.type)
+        {
+            case AttackTypes.PistolShot: GameObject.Instantiate(pistolShotEffect,attackingObject.transform.position,Quaternion.identity);
+                break;
+            default: Debug.LogError("Undefined attack");
+                break;
+        }
     }
 }

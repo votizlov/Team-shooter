@@ -10,5 +10,7 @@ namespace Data
         public KeyCode right;
         public KeyCode left;
         public KeyCode jump;
+        public KeyCode fire;
+        public KeyCode reload;
     }
 }
