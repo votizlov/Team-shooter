@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Users\User\.Rider2019.3\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\User\.Rider2019.3\system\resharper-host\local\Transient\ReSharperHost\v193\SolutionCaches\_Team-shooter.132082413.00" t="ExcludeRecursive" />
+    <e p="C:\Users\User\Documents\Unity\Team-shooter" t="IncludeRecursive">
+      <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
+      <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
+      <e p="Assets" t="Include">
+        <e p="FastIK" t="Include">
+          <e p="Documentation.txt" t="Include" />
+          <e p="Scripts" t="Include">
+            <e p="FastIK" t="Include">
+              <e p="FastIKCCD.cs" t="Include" />
+              <e p="FastIKFabric.cs" t="Include" />
+              <e p="FastIKLook.cs" t="Include" />
+            </e>
+            <e p="Sample" t="Include">
+              <e p="SampleProcedualAnimation.cs" t="Include" />
+              <e p="SampleRotator.cs" t="Include" />
+              <e p="SampleSinMover.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="Scripts" t="Include">
+          <e p="AI" t="Include">
+            <e p="AIObject.cs" t="Include" />
+            <e p="BehaviorsController.cs" t="Include" />
+          </e>
+          <e p="Core" t="Include">
+            <e p="Game.cs" t="Include" />
+            <e p="GameProxy.cs" t="Include" />
+          </e>
+          <e p="DamageSystem" t="Include">
+            <e p="AttackingObject.cs" t="Include" />
+            <e p="AttackManager.cs" t="Include" />
+            <e p="DamagableObject.cs" t="Include" />
+            <e p="DamageManager.cs" t="Include" />
+          </e>
+          <e p="Data" t="Include">
+            <e p="SettingsData.cs" t="Include" />
+          </e>
+          <e p="Objects" t="Include">
+            <e p="PlayerController.cs" t="Include" />
+          </e>
+          <e p="ProceduralLegPlacement" t="Include">
+            <e p="CreatureController.cs" t="Include" />
+            <e p="LegIk.cs" t="Include" />
+            <e p="ProceduralLegPlacement.cs" t="Include" />
+            <e p="SimpleFollow.cs" t="Include" />
+            <e p="SpikeGen.cs" t="Include" />
+          </e>
+          <e p="SimpleCameraController.cs" t="Include" />
+        </e>
+        <e p="TutorialInfo" t="Include">
+          <e p="Scripts" t="Include">
+            <e p="Editor" t="Include">
+              <e p="ReadmeEditor.cs" t="Include" />
+            </e>
+            <e p="Readme.cs" t="Include" />
+          </e>
+        </e>
+      </e>
+      <e p="obj" t="ExcludeRecursive" />
+      <e p="packages" t="ExcludeRecursive" />
+      <e p="Team-shooter.sln" t="IncludeFlat" />
+      <e p="Temp\bin" t="ExcludeRecursive" />
+    </e>
+  </component>
+</project>
