@@ -4,14 +4,22 @@ using UnityEngine;
 
 public class AttackManager : MonoBehaviour
 {
-    [SerializeField]static GameObject pistolShotEffect;
+    public GameObject pistolShotEffect;
+
     public void Attack(AttackingObject attackingObject)
     {
+        Debug.Log(attackingObject.transform);
         switch (attackingObject.type)
         {
-            case AttackTypes.PistolShot: GameObject.Instantiate(pistolShotEffect,attackingObject.transform.position,Quaternion.identity);
+            case AttackTypes.PistolShot:
+                GameObject.Instantiate(pistolShotEffect, new Vector3(0, 0, 0), attackingObject.transform.rotation,
+                    attackingObject.transform);
+                RaycastHit hit;
+                Physics.Raycast(attackingObject.transform.position, attackingObject.transform.forward, out hit,
+                    attackingObject.range);
                 break;
-            default: Debug.LogError("Undefined attack");
+            default:
+                Debug.LogError("Undefined attack");
                 break;
         }
     }

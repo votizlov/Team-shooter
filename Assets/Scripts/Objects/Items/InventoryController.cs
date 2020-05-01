@@ -11,8 +11,8 @@ public class InventoryController : MonoBehaviour
     public void Awake()
     {
         //todo инстанцирование пушек
-        Gun gun = Instantiate(currentGun, gunPlace.position, gunPlace.rotation);
-        gun.transform.SetParent(gunPlace);
+        currentGun = Instantiate(currentGun, gunPlace.position, gunPlace.rotation);
+        currentGun.transform.parent = gunPlace;
     }
 
     public void FireCurrentGun()

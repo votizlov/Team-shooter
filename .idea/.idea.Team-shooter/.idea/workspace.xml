@@ -3,21 +3,18 @@
   <component name="ChangeListManager">
     <list default="true" id="3c980a5b-4321-4b3a-b729-5a9d29627c24" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Team-shooter/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Team-shooter/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Team-shooter/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Team-shooter/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Team-shooter/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Team-shooter/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Player.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Player.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Effects/Line.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Effects/Line.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Guns/Pistol.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Guns/Pistol.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level1.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level1/NavMesh.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level1/NavMesh.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AI/AIObject.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AI/AIObject.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Core/Game.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Core/Game.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Core/GameProxy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Core/GameProxy.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/DamageSystem/AttackManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/DamageSystem/AttackManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/DamageSystem/AttackManager.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/DamageSystem/AttackManager.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/DamageSystem/AttackTypes.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/DamageSystem/AttackTypes.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/DamageSystem/AttackingObject.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/DamageSystem/AttackingObject.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/DamageSystem/DamageManager.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/DamageSystem/DamageManager.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Data/SettingsData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Data/SettingsData.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Objects/PlayerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Objects/PlayerController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Settings/Settings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Settings/Settings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Objects/Gun/GunTypes.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Objects/Gun/GunTypes.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Objects/Items/InventoryController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Objects/Items/InventoryController.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,6 +26,8 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Core/Game.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scenes/Level1.unity" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Objects/Item.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Objects/Items/InventoryController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/DamageSystem/AttackTypes.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Data/SettingsData.cs" root0="FORCE_HIGHLIGHTING" />
@@ -36,6 +35,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Objects/PlayerController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Objects/Gun/Gun.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Objects/Gun/GunTypes.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Objects/Spawner.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/ProceduralLegPlacement/CreatureController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/DamageSystem/AttackingObject.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/DamageSystem/DamagableObject.cs" root0="FORCE_HIGHLIGHTING" />
@@ -47,18 +47,20 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/Assets/Scripts/AI/BehaviorsController.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/AI/AIObject.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/DamageSystem/DamagableObject.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Data/SettingsData.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Objects/Gun/GunTypes.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Objects/PlayerController.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Objects/Items/InventoryController.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/DamageSystem/AttackTypes.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Objects/Gun/Gun.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Objects/Spawner.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/AI/AIObject.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Core/GameProxy.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Core/Game.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/DamageSystem/AttackingObject.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Objects/Gun/GunTypes.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/DamageSystem/AttackTypes.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Objects/Gun/Gun.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Objects/Items/InventoryController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/DamageSystem/AttackManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/DamageSystem/AttackingObject.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Objects/Item.cs" />
       </list>
     </option>
   </component>
@@ -104,7 +106,8 @@
       <workItem from="1588152963027" duration="2706000" />
       <workItem from="1588199350841" duration="3280000" />
       <workItem from="1588256180302" duration="2877000" />
-      <workItem from="1588276565103" duration="4079000" />
+      <workItem from="1588276565103" duration="4466000" />
+      <workItem from="1588342279903" duration="14365000" />
     </task>
     <servers />
   </component>

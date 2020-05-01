@@ -5,9 +5,12 @@ using UnityEngine;
 
 public class AttackingObject : MonoBehaviour
 {
-    [SerializeField]private GameProxy gameProxy; 
+    [SerializeField] private GameProxy gameProxy;
+    public float range;
+
     public AttackTypes type;
 
+//todo reload logic + attack properties
     public void Attack()
     {
         gameProxy.attackManager.Attack(this);

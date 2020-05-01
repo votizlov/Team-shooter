@@ -45,10 +45,12 @@
               <e p="Gun.cs" t="Include" />
               <e p="GunTypes.cs" t="Include" />
             </e>
+            <e p="Item.cs" t="Include" />
             <e p="Items" t="Include">
               <e p="InventoryController.cs" t="Include" />
             </e>
             <e p="PlayerController.cs" t="Include" />
+            <e p="Spawner.cs" t="Include" />
           </e>
           <e p="ProceduralLegPlacement" t="Include">
             <e p="CreatureController.cs" t="Include" />

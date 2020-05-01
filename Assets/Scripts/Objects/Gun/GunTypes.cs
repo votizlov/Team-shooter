@@ -8,5 +8,6 @@ public enum GunTypes
    Rifle,
    SMG,
    Sniper,
-   RocketLauncher
+   RocketLauncher,
+   None
 }
