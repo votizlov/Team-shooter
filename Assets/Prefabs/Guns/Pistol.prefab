@@ -61,6 +61,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameProxy: {fileID: 11400000, guid: 17cdf6579f8da8849b5c19ead03e78c7, type: 2}
+  range: 0
   type: 0
 --- !u!1001 &4720781031812949104
 PrefabInstance:
@@ -72,17 +73,17 @@ PrefabInstance:
     - target: {fileID: -4216859302048453862, guid: a5d87c69ad2d9f2468cb279c105b5ea0,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.062044
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: a5d87c69ad2d9f2468cb279c105b5ea0,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.28443
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: a5d87c69ad2d9f2468cb279c105b5ea0,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.74059
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: a5d87c69ad2d9f2468cb279c105b5ea0,
         type: 3}

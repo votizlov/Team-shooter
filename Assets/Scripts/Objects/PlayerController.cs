@@ -13,6 +13,8 @@ public class PlayerController : MonoBehaviour
 
     [SerializeField] private Camera camera;
 
+    [SerializeField] private GameObject gunPlace;
+
     [SerializeField] private float speed;
 
     [SerializeField] private float speedH = 2.0f;
@@ -55,6 +57,7 @@ public class PlayerController : MonoBehaviour
         yaw += speedH * Input.GetAxis("Mouse X");
         pitch -= speedV * Input.GetAxis("Mouse Y");
         camera.transform.eulerAngles = new Vector3(pitch, yaw, 0f);
+        gunPlace.transform.eulerAngles = new Vector3(pitch,yaw,0f);
         transform.eulerAngles = new Vector3(0f, yaw, 0f);
     }
 

@@ -307,6 +307,12 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!1 &893117584 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2362603814392010858, guid: fd5234b84dd2e684e9fba027ff625f46,
+    type: 3}
+  m_PrefabInstance: {fileID: 2362603814524813785}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &904360040 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1949657888169618603, guid: 662aebe8967233f4ba61f435e422606c,
@@ -883,6 +889,11 @@ PrefabInstance:
       propertyPath: inventoryController
       value: 
       objectReference: {fileID: 2362603814524813787}
+    - target: {fileID: 7306380560380426854, guid: fd5234b84dd2e684e9fba027ff625f46,
+        type: 3}
+      propertyPath: gunPlace
+      value: 
+      objectReference: {fileID: 893117584}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fd5234b84dd2e684e9fba027ff625f46, type: 3}
 --- !u!1 &2362603814524813786 stripped
