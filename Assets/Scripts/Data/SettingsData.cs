@@ -12,5 +12,7 @@ namespace Data
         public KeyCode jump;
         public KeyCode fire;
         public KeyCode reload;
+        public KeyCode interaction;
+        public KeyCode openAlliesMenu;
     }
 }

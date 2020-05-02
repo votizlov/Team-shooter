@@ -1,13 +1,17 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using Data;
 using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
+    public event Action<PlayerController> OnInteract;
     [SerializeField] private SettingsData settings;
 
     [SerializeField] private InventoryController inventoryController;
+
+    [SerializeField] private UIController UI;
 
     [SerializeField] private Rigidbody rigidbody;
 
@@ -31,15 +35,18 @@ public class PlayerController : MonoBehaviour
         {
             applyAcceleration(gameObject.transform.forward);
         }
-        else if (Input.GetKey(settings.backward))
+
+        if (Input.GetKey(settings.backward))
         {
             applyAcceleration(-gameObject.transform.forward);
         }
-        else if (Input.GetKey(settings.left))
+
+        if (Input.GetKey(settings.left))
         {
             applyAcceleration(Quaternion.Euler(0, -90, 0) * gameObject.transform.forward);
         }
-        else if (Input.GetKey(settings.right))
+
+        if (Input.GetKey(settings.right))
         {
             applyAcceleration(Quaternion.Euler(0, 90, 0) * gameObject.transform.forward);
         }
@@ -54,11 +61,21 @@ public class PlayerController : MonoBehaviour
             inventoryController.FireCurrentGun();
         }
 
+        if (Input.GetKeyDown(settings.interaction))
+        {
+            OnInteract?.Invoke(this);
+        }
+
+        if (Input.GetKeyDown(settings.openAlliesMenu))
+        {
+            UI.OpenAlliesMenu(this);
+        }
+
         yaw += speedH * Input.GetAxis("Mouse X");
         pitch -= speedV * Input.GetAxis("Mouse Y");
-        camera.transform.eulerAngles = new Vector3(pitch, yaw, 0f);
-        gunPlace.transform.eulerAngles = new Vector3(pitch,yaw,0f);
         transform.eulerAngles = new Vector3(0f, yaw, 0f);
+        camera.transform.eulerAngles = new Vector3(pitch, yaw, 0f);
+        gunPlace.transform.eulerAngles = new Vector3(pitch, yaw, 0f);
     }
 
     private void applyAcceleration(Vector3 dir)

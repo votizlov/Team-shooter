@@ -19,3 +19,5 @@ MonoBehaviour:
   jump: 32
   fire: 323
   reload: 114
+  interaction: 101
+  openAlliesMenu: 113

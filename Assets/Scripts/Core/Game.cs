@@ -8,10 +8,16 @@ public class Game : MonoBehaviour
     [SerializeField] private GameProxy gameProxy;
 
     [SerializeField] private AttackManager attackManager;
+
+    [SerializeField] private PlayerController currentplayer;
+
+    [SerializeField] private UIController UI;
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
         gameProxy.attackManager = attackManager;
+        gameProxy.player = currentplayer;
+        gameProxy.UI = UI;
     }
 
     // Update is called once per frame

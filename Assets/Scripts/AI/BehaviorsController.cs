@@ -10,17 +10,17 @@ namespace AI
         {
             switch (aiObject.state)
             {
-                case BehaviorStates.Idle:Idle(aiObject)
-                    ;
+                case BehaviorStates.Idle:
+                    Idle(aiObject);
                     break;
                 case BehaviorStates.Attacking:
-                    ;
+                    Attacking(aiObject);
                     break;
                 case BehaviorStates.Patrolling:
-                    ;
+                    Patrolling(aiObject);
                     break;
                 case BehaviorStates.Pirsuing:
-                    ;
+                    Pirsuing(aiObject);
                     break;
                 default:
                     Debug.LogError("Undefined state");
@@ -32,15 +32,17 @@ namespace AI
         {
             aiObject.agent.SetDestination(aiObject.target.position);
         }
-        
-        private static void Attacking(AIObject aiObject){
-    
+
+        private static void Attacking(AIObject aiObject)
+        {
         }
-        private static void Patrolling(AIObject aiObject){
-    
+
+        private static void Patrolling(AIObject aiObject)
+        {
         }
-        private static void Pirsuing(AIObject aiObject){
-    
+
+        private static void Pirsuing(AIObject aiObject)
+        {
         }
     }
 

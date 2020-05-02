@@ -30,6 +30,13 @@
           <e p="Core" t="Include">
             <e p="Game.cs" t="Include" />
             <e p="GameProxy.cs" t="Include" />
+            <e p="Pooling" t="Include">
+              <e p="ObjectPooling.cs" t="Include" />
+              <e p="PoolManager.cs" t="Include" />
+              <e p="PoolObject.cs" t="Include" />
+              <e p="PoolSetup.cs" t="Include" />
+            </e>
+            <e p="UIController.cs" t="Include" />
           </e>
           <e p="DamageSystem" t="Include">
             <e p="AttackingObject.cs" t="Include" />
@@ -41,6 +48,7 @@
             <e p="SettingsData.cs" t="Include" />
           </e>
           <e p="Objects" t="Include">
+            <e p="AlliesShop.cs" t="Include" />
             <e p="Gun" t="Include">
               <e p="Gun.cs" t="Include" />
               <e p="GunTypes.cs" t="Include" />
