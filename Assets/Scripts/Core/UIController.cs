@@ -24,7 +24,6 @@ public class UIController : MonoBehaviour
     public void OpenAlliesShopMenu(AlliesShop shop)
     {
         if (_isMenuOpened) return;
-        Debug.Log("sd");
         _isMenuOpened = true;
         _currShop = shop;
         alliesShop.SetActive(true);

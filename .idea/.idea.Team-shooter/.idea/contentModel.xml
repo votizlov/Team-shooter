@@ -7,6 +7,19 @@
       <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
+        <e p="Apex" t="Include">
+          <e p="AINameMap.cs" t="Include" />
+          <e p="Apex AI Examples and Documentation" t="Include">
+            <e p="Additional Documentation Online.txt" t="Include" />
+            <e p="GetYourLicense.txt" t="Include" />
+          </e>
+          <e p="Apex Binaries" t="Include">
+            <e p="link.xml" t="Include" />
+          </e>
+          <e p="Apex Utility AI" t="Include">
+            <e p="ChangeLog.txt" t="Include" />
+          </e>
+        </e>
         <e p="FastIK" t="Include">
           <e p="Documentation.txt" t="Include" />
           <e p="Scripts" t="Include">
@@ -22,10 +35,20 @@
             </e>
           </e>
         </e>
+        <e p="FollowPlayer.cs" t="Include" />
         <e p="Scripts" t="Include">
           <e p="AI" t="Include">
+            <e p="Actions" t="Include">
+              <e p="AttackTarget.cs" t="Include" />
+              <e p="FindClosestTarget.cs" t="Include" />
+              <e p="GoToTarget.cs" t="Include" />
+              <e p="PirsuingAndAttackingTgt.cs" t="Include" />
+              <e p="RotateToTarget.cs" t="Include" />
+            </e>
             <e p="AIObject.cs" t="Include" />
-            <e p="BehaviorsController.cs" t="Include" />
+            <e p="AllyContextProvider.cs" t="Include" />
+            <e p="EnemyContextProvider.cs" t="Include" />
+            <e p="MainContext.cs" t="Include" />
           </e>
           <e p="Core" t="Include">
             <e p="Game.cs" t="Include" />

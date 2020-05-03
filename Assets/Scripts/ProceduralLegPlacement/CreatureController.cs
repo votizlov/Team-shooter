@@ -24,7 +24,7 @@ public class CreatureController : MonoBehaviour {
     }
 
     void Update () {
-        float mSpeed = (Input.GetButton ("Fire3") ? sprintSpeed : walkSpeed);
+        float mSpeed = walkSpeed;
         velocity = Vector3.MoveTowards (velocity, new Vector3 (Input.GetAxis ("Horizontal"), 0f, Input.GetAxis ("Vertical")).normalized, Time.deltaTime * moveInputFactor);
         rSpeed = Mathf.MoveTowards (rSpeed, Input.GetAxis ("Turn") * rotationSpeed, rotateInputFactor * Time.deltaTime);
         transform.Rotate (0f, rSpeed * Time.deltaTime, 0f);
@@ -35,7 +35,7 @@ public class CreatureController : MonoBehaviour {
         }
 
         if (Time.time > lastStep + (timeBetweenSteps / legs.Length) && legs != null) {
-            if (legs[index] == null) return;
+            //if (legs[index] == null) return;
 
             Vector3 legPoint = (legs[index].restingPosition + velocity);
             Vector3 legDirection = legPoint - transform.position;

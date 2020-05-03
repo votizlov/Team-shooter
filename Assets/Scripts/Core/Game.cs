@@ -18,6 +18,7 @@ public class Game : MonoBehaviour
         gameProxy.attackManager = attackManager;
         gameProxy.player = currentplayer;
         gameProxy.UI = UI;
+        gameProxy.allies.Add(currentplayer.gameObject);
     }
 
     // Update is called once per frame

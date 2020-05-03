@@ -1,13 +1,14 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class Gun : MonoBehaviour
 {
-    [SerializeField] private AttackingObject attackingObject;
+    public AttackingObject attackingObject;
     [SerializeField] private int magCapacity;
     [SerializeField] private int maxInventoryRounds;
-    
+
     public void Reload()
     {
         

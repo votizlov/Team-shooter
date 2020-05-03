@@ -1,25 +1,17 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
-using AI;
 using UnityEngine;
 using UnityEngine.AI;
 
 public class AIObject : MonoBehaviour
 {
-    [HideInInspector] public BehaviorStates state;
+    public List<GameObject> possibleTargets;
     public NavMeshAgent agent;
+    public Gun attack;
 
-    [SerializeField] private AnimatorControllerParameter animatorControllerParameter;
-
-
-    public Transform target;
-
-    void Awake()
+    private void Start()
     {
-        BehaviorsController.UpdateBehavior(this);
-    }
-
-    void Update()
-    {
+        
     }
 }
