@@ -4,7 +4,6 @@
     <e p="C:\Users\User\.Rider2019.3\system\extResources" t="IncludeRecursive" />
     <e p="C:\Users\User\.Rider2019.3\system\resharper-host\local\Transient\ReSharperHost\v193\SolutionCaches\_Team-shooter.132082413.00" t="ExcludeRecursive" />
     <e p="C:\Users\User\Documents\Unity\Team-shooter" t="IncludeRecursive">
-      <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
         <e p="Apex" t="Include">
@@ -35,20 +34,28 @@
             </e>
           </e>
         </e>
-        <e p="FollowPlayer.cs" t="Include" />
         <e p="Scripts" t="Include">
           <e p="AI" t="Include">
             <e p="Actions" t="Include">
               <e p="AttackTarget.cs" t="Include" />
               <e p="FindClosestTarget.cs" t="Include" />
+              <e p="FollowPlayer.cs" t="Include" />
+              <e p="GoToPos.cs" t="Include" />
               <e p="GoToTarget.cs" t="Include" />
-              <e p="PirsuingAndAttackingTgt.cs" t="Include" />
               <e p="RotateToTarget.cs" t="Include" />
+              <e p="ToggleRagdoll.cs" t="Include" />
             </e>
-            <e p="AIObject.cs" t="Include" />
+            <e p="AlliesCommander.cs" t="Include" />
+            <e p="AllyBehaviors.cs" t="Include" />
             <e p="AllyContextProvider.cs" t="Include" />
             <e p="EnemyContextProvider.cs" t="Include" />
             <e p="MainContext.cs" t="Include" />
+            <e p="Scorers" t="Include">
+              <e p="isAgentArrived.cs" t="Include" />
+              <e p="IsAttacking.cs" t="Include" />
+              <e p="isNewDestinationReceived.cs" t="Include" />
+              <e p="randomGenerator.cs" t="Include" />
+            </e>
           </e>
           <e p="Core" t="Include">
             <e p="Game.cs" t="Include" />
@@ -71,6 +78,7 @@
             <e p="SettingsData.cs" t="Include" />
           </e>
           <e p="Objects" t="Include">
+            <e p="AlliesCommandMenu.cs" t="Include" />
             <e p="AlliesShop.cs" t="Include" />
             <e p="Gun" t="Include">
               <e p="Gun.cs" t="Include" />
@@ -91,14 +99,6 @@
             <e p="SpikeGen.cs" t="Include" />
           </e>
           <e p="SimpleCameraController.cs" t="Include" />
-        </e>
-        <e p="TutorialInfo" t="Include">
-          <e p="Scripts" t="Include">
-            <e p="Editor" t="Include">
-              <e p="ReadmeEditor.cs" t="Include" />
-            </e>
-            <e p="Readme.cs" t="Include" />
-          </e>
         </e>
       </e>
       <e p="obj" t="ExcludeRecursive" />

@@ -13,8 +13,7 @@ public class AttackManager : MonoBehaviour
         {
             case AttackTypes.PistolShot:
                 t = attackingObject.transform;
-                GameObject.Instantiate(pistolShotEffect, t.position, t.rotation,
-                    t);
+                GameObject.Instantiate(pistolShotEffect, t.position, t.rotation);
                 RaycastHit hit;
                 Physics.Raycast(attackingObject.transform.position, attackingObject.transform.forward, out hit,
                     attackingObject.range);

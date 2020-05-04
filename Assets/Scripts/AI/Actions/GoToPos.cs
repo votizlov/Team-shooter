@@ -3,13 +3,12 @@ using System.Collections.Generic;
 using Apex.AI;
 using UnityEngine;
 
-public class RotateToTarget : ActionBase
+public class GoToPos : ActionBase
 {
 
     public override void Execute(IAIContext context)
     {
         var c = (MainContext)context;
-        if (c.target == null) return;
-        c.gun.transform.LookAt(c.target.transform.position);
+        c.agent.destination = c.lastOrderedDestination;
     }
 }

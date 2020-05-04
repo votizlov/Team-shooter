@@ -7,19 +7,9 @@ public class UIController : MonoBehaviour
     [SerializeField] private GameObject alliesShop;
     [SerializeField] private GameObject alliesMenu;
     private AlliesShop _currShop;
+    private AlliesCommander _currCommander;
 
     private bool _isMenuOpened;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 
     public void OpenAlliesShopMenu(AlliesShop shop)
     {
@@ -29,17 +19,39 @@ public class UIController : MonoBehaviour
         alliesShop.SetActive(true);
     }
 
-    public void OpenAlliesMenu(PlayerController player)
+    public void OpenAlliesMenu(AlliesCommander commander)
     {
         if (_isMenuOpened) return;
         _isMenuOpened = true;
+        _currCommander = commander;
         alliesMenu.SetActive(true);
     }
 
     public void SpawnBoughtAlly(GameObject ally)
     {
-        alliesMenu.SetActive(false);
+        alliesShop.SetActive(false);
         _isMenuOpened = false;
         Instantiate(ally, _currShop.spawnPoint, Quaternion.identity);
+    }
+
+    public void ChangeAllyBehavior(AllyBehaviors behavior)
+    {
+        _currCommander.allyBehavior = behavior;
+        alliesMenu.SetActive(false);
+        _isMenuOpened = false;
+    }
+
+    public void ChangeAllyDestination()
+    {
+        _currCommander.UpdateDestination();
+        alliesMenu.SetActive(false);
+        _isMenuOpened = false;
+    }
+
+    public void ChangeAllyTarget()
+    {
+        _currCommander.UpdateTarget();
+        alliesMenu.SetActive(false);
+        _isMenuOpened = false;
     }
 }

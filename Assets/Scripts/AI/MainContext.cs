@@ -11,5 +11,8 @@ public class MainContext : IAIContext
     public Gun gun;
     public GameObject target;
     public Transform currentPos;
-    public Vector3 position;
+    public Vector3 targetPosition;
+    public Vector3 lastOrderedDestination;
+    public PlayerController currPlayer;
+    public AlliesCommander commander;
 }

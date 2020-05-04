@@ -7,7 +7,10 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     public event Action<PlayerController> OnInteract;
+
     [SerializeField] private SettingsData settings;
+
+    [SerializeField] private AlliesCommander _alliesCommander;
 
     [SerializeField] private InventoryController inventoryController;
 
@@ -68,7 +71,7 @@ public class PlayerController : MonoBehaviour
 
         if (Input.GetKeyDown(settings.openAlliesMenu))
         {
-            UI.OpenAlliesMenu(this);
+            UI.OpenAlliesMenu(_alliesCommander);
         }
 
         yaw += speedH * Input.GetAxis("Mouse X");

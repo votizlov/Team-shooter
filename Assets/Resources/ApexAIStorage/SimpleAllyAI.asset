@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1719459976, guid: 6012f3241c1c1f7409c44769fc0a1db7, type: 3}
+  m_Name: SimpleAllyAI
+  m_EditorClassIdentifier: 
+  description: 
+  version: 16779010
+  aiId: e96123b7-3f93-4079-b375-0229e63179c0
+  configuration: '{"@type":"Apex.AI.UtilityAI, ApexAI","_rootSelectorId":39dffc726ade4df7b6d38642672a896e,"_id":e96123b73f934079b3750229e63179c0,"_selectors":[{"@type":"Apex.AI.ScoreSelector,
+    ApexAI","_id":39dffc726ade4df7b6d38642672a896e,"_qualifiers":[{"@type":"Apex.AI.CompositeAllOrNothingQualifier,
+    ApexAI","action":{"@type":"Apex.AI.SelectorAction, ApexAI","_selectorId":ccd6ea3348964fe4a2e8d2ab7a30315c},"_scorers":[{"@type":"isNewDestinationReceived,
+    Assembly-CSharp"}]},{"@type":"Apex.AI.CompositeAllOrNothingQualifier, ApexAI","action":{"@type":"Apex.AI.SelectorAction,
+    ApexAI","_selectorId":2f964028ffb14de391955268247eb1d3},"_scorers":[{"@type":"isAgentArrived,
+    Assembly-CSharp"}]}],"_defaultQualifier":{"@type":"Apex.AI.DefaultQualifier,
+    ApexAI"}},{"@type":"Apex.AI.ScoreSelector, ApexAI","_id":ccd6ea3348964fe4a2e8d2ab7a30315c,"_qualifiers":[],"_defaultQualifier":{"@type":"Apex.AI.DefaultQualifier,
+    ApexAI","action":{"@type":"Apex.AI.CompositeAction, ApexAI","_actions":[{"@type":"GoToPos,
+    Assembly-CSharp"}]}}},{"@type":"Apex.AI.ScoreSelector, ApexAI","_id":2f964028ffb14de391955268247eb1d3,"_qualifiers":[],"_defaultQualifier":{"@type":"Apex.AI.DefaultQualifier,
+    ApexAI","action":{"@type":"FollowPlayer, Assembly-CSharp"}}}]}'
+  editorConfiguration: '{"offset":{"@x":0,"@y":0},"zoom":1,"SelectorView":{"ViewArea":{"@left":20,"@top":120,"@width":200,"@height":220},"Name":"UpdateOrders","QualifierView":{"Name":"if
+    is new destination received","ActionView":{"@connectorType":"Selector"}},"QualifierView":{"Name":"if
+    destination reached","ActionView":{"@connectorType":"Selector"}},"DefaultQualifier":{"Name":"is
+    passive"}},"SelectorView":{"ViewArea":{"@left":320,"@top":80,"@width":200,"@height":100},"DefaultQualifier":{"ActionView":{"@connectorType":"Composite"}}},"SelectorView":{"ViewArea":{"@left":340,"@top":200,"@width":200,"@height":100},"DefaultQualifier":{"ActionView":{}}}}'
