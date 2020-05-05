@@ -1,4 +1,5 @@
-﻿using AI;
+﻿using System.Collections.Generic;
+using AI;
 using Objects;
 using UnityEngine;
 
@@ -22,7 +23,9 @@ namespace Core
             gameProxy.attackManager = attackManager;
             gameProxy.player = currentplayer;
             gameProxy.UI = UI;
-            //gameProxy.allies.Add(currentplayer.gameObject);
+            gameProxy.allies = new List<GameObject>();
+            gameProxy.enemies = new List<GameObject>();
+            gameProxy.allies.Add(currentplayer.gameObject);
         }
     }
 }
