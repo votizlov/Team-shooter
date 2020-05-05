@@ -1,9 +1,8 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-
-public enum AttackTypes 
+﻿namespace DamageSystem
 {
-    PistolShot,
-    None
+    public enum AttackTypes 
+    {
+        PistolShot,
+        None
+    }
 }

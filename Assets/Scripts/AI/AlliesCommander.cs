@@ -1,30 +1,31 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
-public class AlliesCommander : MonoBehaviour
+namespace AI
 {
-    public AllyBehaviors allyBehavior = AllyBehaviors.Attacking;
-
-    [HideInInspector] public Vector3 alliesDestination;
-
-    //todo target selection public GameObject AlliesTarget;
-    public Camera cam;
-
-    private RaycastHit _hit;
-    private int layerMask = 1 << 9;
-
-    public void UpdateDestination()
+    public class AlliesCommander : MonoBehaviour
     {
-        if (Physics.Raycast(transform.position, cam.transform.forward, out _hit, 100,
-            ~layerMask))
+        public AllyBehaviors allyBehavior = AllyBehaviors.Attacking;
+
+        [HideInInspector] public Vector3 alliesDestination;
+
+        //todo target selection public GameObject AlliesTarget;
+        public Camera cam;
+
+        private RaycastHit _hit;
+        private int layerMask = 1 << 9;
+
+        public void UpdateDestination()
         {
-            alliesDestination = _hit.point;
+            if (Physics.Raycast(transform.position, cam.transform.forward, out _hit, 100,
+                ~layerMask))
+            {
+                alliesDestination = _hit.point;
+            }
         }
-    }
 
-    public void UpdateTarget()
-    {
-        //todo change target
+        public void UpdateTarget()
+        {
+            //todo change target
+        }
     }
 }

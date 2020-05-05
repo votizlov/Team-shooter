@@ -1,32 +1,34 @@
 ﻿using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-public class Spawner : MonoBehaviour
+namespace Objects
 {
-    [SerializeField] private float offset = 2;
-
-    [SerializeField] private float maxX = 300;
-
-    [SerializeField] private float maxZ = 300;
-
-    [SerializeField] private GameObject objectToSpawn;
-
-    [SerializeField] private float spawnFreq = 5;
-    private Vector3 v;
-
-    void Start()
+    public class Spawner : MonoBehaviour
     {
-        StartCoroutine(spawn());
-    }
+        [SerializeField] private float offset = 2;
 
-    private IEnumerator spawn()
-    {
-        while (true)
+        [SerializeField] private float maxX = 300;
+
+        [SerializeField] private float maxZ = 300;
+
+        [SerializeField] private GameObject objectToSpawn;
+
+        [SerializeField] private float spawnFreq = 5;
+        private Vector3 v;
+
+        void Start()
         {
-            v = new Vector3(Random.Range(0, maxX), offset, Random.Range(0, maxZ));
-            Instantiate(objectToSpawn, v, Quaternion.identity);
-            yield return new WaitForSeconds(spawnFreq);
+            StartCoroutine(spawn());
+        }
+
+        private IEnumerator spawn()
+        {
+            while (true)
+            {
+                v = new Vector3(Random.Range(0, maxX), offset, Random.Range(0, maxZ));
+                Instantiate(objectToSpawn, v, Quaternion.identity);
+                yield return new WaitForSeconds(spawnFreq);
+            }
         }
     }
 }

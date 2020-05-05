@@ -1,15 +1,18 @@
 ﻿using UnityEngine;
 
-public class DamagableObject : MonoBehaviour
+namespace DamageSystem
 {
-    [SerializeField] private int hp;
-
-    public void RemoveHP(int hp)
+    public class DamagableObject : MonoBehaviour
     {
-        this.hp -= hp;
-        if (this.hp <= 0)
+        [SerializeField] private int hp;
+
+        public void RemoveHP(int hp)
         {
-            Destroy(gameObject);
+            this.hp -= hp;
+            if (this.hp <= 0)
+            {
+                Destroy(gameObject);
+            }
         }
     }
 }

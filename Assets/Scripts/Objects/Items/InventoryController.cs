@@ -1,37 +1,39 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using UnityEngine;
 
-public class InventoryController : MonoBehaviour
+namespace Objects.Items
 {
-    public Gun currentGun;
-    [SerializeField] private List<Gun> guns;
-    [SerializeField] private Transform gunPlace;
-
-    public void Awake()
+    public class InventoryController : MonoBehaviour
     {
-        //todo инстанцирование пушек
-        currentGun = Instantiate(currentGun, gunPlace.position, gunPlace.rotation);
-        currentGun.transform.parent = gunPlace;
-    }
+        public Gun.Gun currentGun;
+        [SerializeField] private List<Gun.Gun> guns;
+        [SerializeField] private Transform gunPlace;
 
-    public void FireCurrentGun()
-    {
-        currentGun.Fire();
-    }
+        public void Awake()
+        {
+            //todo инстанцирование пушек
+            currentGun = Instantiate(currentGun, gunPlace.position, gunPlace.rotation);
+            currentGun.transform.parent = gunPlace;
+        }
 
-    public void ReloadCurrentGun()
-    {
+        public void FireCurrentGun()
+        {
+            currentGun.Fire();
+        }
+
+        public void ReloadCurrentGun()
+        {
         
-    }
+        }
 
-    public void AddGun()
-    {
+        public void AddGun()
+        {
         
-    }
+        }
 
-    public void AddRounds()
-    {
+        public void AddRounds()
+        {
         
+        }
     }
 }

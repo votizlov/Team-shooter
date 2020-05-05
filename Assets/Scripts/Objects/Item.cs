@@ -1,9 +1,10 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
-public abstract class Item : MonoBehaviour
+namespace Objects
 {
-    public abstract void ApplyBonus(PlayerController playerController);
-    public abstract void RemoveBonus(PlayerController playerController);
+    public abstract class Item : MonoBehaviour
+    {
+        public abstract void ApplyBonus(PlayerController playerController);
+        public abstract void RemoveBonus(PlayerController playerController);
+    }
 }

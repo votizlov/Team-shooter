@@ -1,44 +1,44 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using Core;
+﻿using Core;
 using UnityEngine;
 
-public class AlliesShop : MonoBehaviour
+namespace Objects
 {
-    [SerializeField] private GameProxy gameProxy;
-    public Vector3 spawnPoint;
-    private bool _isPlayerInRange;
-
-    // Start is called before the first frame update
-    private void Start()
+    public class AlliesShop : MonoBehaviour
     {
-        gameProxy.player.OnInteract += OpenMenu;
-    }
+        [SerializeField] private GameProxy gameProxy;
+        public Vector3 spawnPoint;
+        private bool _isPlayerInRange;
 
-    // Update is called once per frame
-    private void OnDisable()
-    {
-        gameProxy.player.OnInteract -= OpenMenu;
-    }
 
-    private void OpenMenu(PlayerController player)
-    {
-        if (_isPlayerInRange)
+        private void Start()
         {
-            gameProxy.UI.OpenAlliesShopMenu(this);
+            gameProxy.player.OnInteract += OpenMenu;
         }
-    }
 
-    private void OnTriggerEnter(Collider other)
-    {
-        if (other.gameObject.CompareTag("Player"))
-            _isPlayerInRange = true;
-    }
 
-    private void OnTriggerExit(Collider other)
-    {
-        if (other.gameObject.CompareTag("Player"))
-            _isPlayerInRange = false;
+        private void OnDisable()
+        {
+            gameProxy.player.OnInteract -= OpenMenu;
+        }
+
+        private void OpenMenu(PlayerController player)
+        {
+            if (_isPlayerInRange)
+            {
+                gameProxy.UI.OpenAlliesShopMenu(this);
+            }
+        }
+
+        private void OnTriggerEnter(Collider other)
+        {
+            if (other.gameObject.layer == 9)
+                _isPlayerInRange = true;
+        }
+
+        private void OnTriggerExit(Collider other)
+        {
+            if (other.gameObject.layer == 9)
+                _isPlayerInRange = false;
+        }
     }
 }

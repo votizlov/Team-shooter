@@ -1,105 +1,109 @@
 ﻿using System;
-using System.Collections;
-using System.Collections.Generic;
+using AI;
+using Core;
 using Data;
+using Objects.Items;
 using UnityEngine;
 
-public class PlayerController : MonoBehaviour
+namespace Objects
 {
-    public event Action<PlayerController> OnInteract;
-
-    [SerializeField] private SettingsData settings;
-
-    [SerializeField] private AlliesCommander _alliesCommander;
-
-    [SerializeField] private InventoryController inventoryController;
-
-    [SerializeField] private UIController UI;
-
-    [SerializeField] private Rigidbody rigidbody;
-
-    [SerializeField] private Camera camera;
-
-    [SerializeField] private GameObject gunPlace;
-
-    [SerializeField] private float speed;
-
-    [SerializeField] private float speedH = 2.0f;
-
-    [SerializeField] private float speedV = 2.0f;
-
-    private float _yaw = 0f;
-
-    private float _pitch = 0f;
-
-    private bool _toggleMouseFollow = true;
-
-    private void Start()
+    public class PlayerController : MonoBehaviour
     {
-        gunPlace.transform.forward = camera.transform.forward;
-    }
+        public event Action<PlayerController> OnInteract;
 
-    void Update()
-    {
-        if (Input.GetKey(settings.forward))
+        [SerializeField] private SettingsData settings;
+
+        [SerializeField] private AlliesCommander _alliesCommander;
+
+        [SerializeField] private InventoryController inventoryController;
+
+        [SerializeField] private UIController UI;
+
+        [SerializeField] private Rigidbody rigidbody;
+
+        [SerializeField] private Camera camera;
+
+        [SerializeField] private GameObject gunPlace;
+
+        [SerializeField] private float speed;
+
+        [SerializeField] private float speedH = 2.0f;
+
+        [SerializeField] private float speedV = 2.0f;
+
+        private float _yaw = 0f;
+
+        private float _pitch = 0f;
+
+        private bool _toggleMouseFollow = true;
+
+        private void Start()
         {
-            applyAcceleration(gameObject.transform.forward);
+            gunPlace.transform.forward = camera.transform.forward;
         }
 
-        if (Input.GetKey(settings.backward))
+        void Update()
         {
-            applyAcceleration(-gameObject.transform.forward);
+            if (Input.GetKey(settings.forward))
+            {
+                applyAcceleration(gameObject.transform.forward);
+            }
+
+            if (Input.GetKey(settings.backward))
+            {
+                applyAcceleration(-gameObject.transform.forward);
+            }
+
+            if (Input.GetKey(settings.left))
+            {
+                applyAcceleration(Quaternion.Euler(0, -90, 0) * gameObject.transform.forward);
+            }
+
+            if (Input.GetKey(settings.right))
+            {
+                applyAcceleration(Quaternion.Euler(0, 90, 0) * gameObject.transform.forward);
+            }
+
+            if (Input.GetKey(settings.jump))
+            {
+                applyAcceleration(gameObject.transform.up);
+            }
+
+            if (Input.GetKey(settings.fire))
+            {
+                inventoryController.FireCurrentGun();
+            }
+
+            if (Input.GetKeyDown(settings.interaction))
+            {
+                OnInteract?.Invoke(this);
+            }
+
+            if (Input.GetKeyDown(settings.openAlliesMenu))
+            {
+                _toggleMouseFollow = false;
+                UI.OpenAlliesMenu(_alliesCommander);
+            }
+
+            if (Input.GetKeyUp(settings.openAlliesMenu))
+            {
+                _toggleMouseFollow = true;
+                UI.CloseAlliesMenu();
+            }
+
+            if (_toggleMouseFollow)
+            {
+                _yaw += speedH * Input.GetAxis("Mouse X");
+                _pitch -= speedV * Input.GetAxis("Mouse Y");
+                transform.eulerAngles = new Vector3(0f, _yaw, 0f);
+                camera.transform.eulerAngles = new Vector3(_pitch, _yaw, 0f);
+                gunPlace.transform.eulerAngles = new Vector3(_pitch, _yaw, 0f);
+            }
         }
 
-        if (Input.GetKey(settings.left))
+        private void applyAcceleration(Vector3 dir)
         {
-            applyAcceleration(Quaternion.Euler(0, -90, 0) * gameObject.transform.forward);
+            rigidbody.AddForce(dir * speed);
         }
-
-        if (Input.GetKey(settings.right))
-        {
-            applyAcceleration(Quaternion.Euler(0, 90, 0) * gameObject.transform.forward);
-        }
-
-        if (Input.GetKey(settings.jump))
-        {
-            applyAcceleration(gameObject.transform.up);
-        }
-
-        if (Input.GetKey(settings.fire))
-        {
-            inventoryController.FireCurrentGun();
-        }
-
-        if (Input.GetKeyDown(settings.interaction))
-        {
-            OnInteract?.Invoke(this);
-        }
-
-        if (Input.GetKeyDown(settings.openAlliesMenu))
-        {
-            _toggleMouseFollow = false;
-            UI.OpenAlliesMenu(_alliesCommander);
-        }
-
-        if (Input.GetKeyUp(settings.openAlliesMenu))
-        {
-            _toggleMouseFollow = true;
-            UI.CloseAlliesMenu();
-        }
-
-        if (_toggleMouseFollow)
-        {
-            _yaw += speedH * Input.GetAxis("Mouse X");
-            _pitch -= speedV * Input.GetAxis("Mouse Y");
-            transform.eulerAngles = new Vector3(0f, _yaw, 0f);
-            camera.transform.eulerAngles = new Vector3(_pitch, _yaw, 0f);
-            gunPlace.transform.eulerAngles = new Vector3(_pitch, _yaw, 0f);
-        }
-    }
-
-    private void applyAcceleration(Vector3 dir)
-    {
-        rigidbody.AddForce(dir * speed);
     }
 }

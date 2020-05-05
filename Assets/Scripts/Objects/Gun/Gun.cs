@@ -1,21 +1,22 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
+﻿using DamageSystem;
 using UnityEngine;
 
-public class Gun : MonoBehaviour
+namespace Objects.Gun
 {
-    public AttackingObject attackingObject;
-    [SerializeField] private int magCapacity;
-    [SerializeField] private int maxInventoryRounds;
-
-    public void Reload()
+    public class Gun : MonoBehaviour
     {
+        public AttackingObject attackingObject;
+        [SerializeField] private int magCapacity;
+        [SerializeField] private int maxInventoryRounds;
+
+        public void Reload()
+        {
         
-    }
+        }
 
-    public void Fire()
-    {
-        attackingObject.Attack();
+        public void Fire()
+        {
+            attackingObject.Attack();
+        }
     }
 }

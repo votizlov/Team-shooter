@@ -1,13 +1,12 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-
-public enum GunTypes 
+﻿namespace Objects.Gun
 {
-   Pistol,
-   Rifle,
-   SMG,
-   Sniper,
-   RocketLauncher,
-   None
+   public enum GunTypes 
+   {
+      Pistol,
+      Rifle,
+      SMG,
+      Sniper,
+      RocketLauncher,
+      None
+   }
 }

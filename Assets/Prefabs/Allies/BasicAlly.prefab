@@ -213,7 +213,6 @@ MonoBehaviour:
   agent: {fileID: 1511526555232181072}
   gameProxy: {fileID: 11400000, guid: 17cdf6579f8da8849b5c19ead03e78c7, type: 2}
   gun: {fileID: 529462126202180080}
-  commander: {fileID: 0}
 --- !u!114 &1691277154263918454
 MonoBehaviour:
   m_ObjectHideFlags: 0

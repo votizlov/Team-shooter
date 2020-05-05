@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using DamageSystem;
 using UnityEngine;
 
 public class AttackManager : MonoBehaviour
@@ -20,7 +21,6 @@ public class AttackManager : MonoBehaviour
                     attackingObject.range))
                 {
                     Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.forward) * hit.distance, Color.yellow);
-                    Debug.Log(hit.collider.tag);
                     if (hit.collider.gameObject.CompareTag("Damagable"))
                     {
                         hit.collider.GetComponent<DamagableObject>().RemoveHP(attackingObject.damage);

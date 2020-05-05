@@ -1,9 +1,8 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-
-public enum AllyBehaviors 
+﻿namespace AI
 {
-    Passive,
-    Attacking
+    public enum AllyBehaviors 
+    {
+        Passive,
+        Attacking
+    }
 }
