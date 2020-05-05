@@ -7,7 +7,7 @@ public class DamagableObject : MonoBehaviour
     public void RemoveHP(int hp)
     {
         this.hp -= hp;
-        if (this.hp < 0)
+        if (this.hp <= 0)
         {
             Destroy(gameObject);
         }

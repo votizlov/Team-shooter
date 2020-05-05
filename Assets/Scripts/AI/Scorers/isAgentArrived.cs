@@ -9,7 +9,10 @@ public class isAgentArrived : ContextualScorerBase
     {
         var c = (MainContext) context;
         if (c.agent.remainingDistance < 1)
+        {
             return 2;
+        }
+
         return 0;
     }
 }

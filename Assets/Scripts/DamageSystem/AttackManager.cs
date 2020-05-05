@@ -15,8 +15,19 @@ public class AttackManager : MonoBehaviour
                 t = attackingObject.transform;
                 GameObject.Instantiate(pistolShotEffect, t.position, t.rotation);
                 RaycastHit hit;
-                Physics.Raycast(attackingObject.transform.position, attackingObject.transform.forward, out hit,
-                    attackingObject.range);
+
+                if (Physics.Raycast(attackingObject.transform.position, attackingObject.transform.forward, out hit,
+                    attackingObject.range))
+                {
+                    Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.forward) * hit.distance, Color.yellow);
+                    Debug.Log(hit.collider.tag);
+                    if (hit.collider.gameObject.CompareTag("Damagable"))
+                    {
+                        hit.collider.GetComponent<DamagableObject>().RemoveHP(attackingObject.damage);
+                    }
+                }
+
+
                 break;
             default:
                 Debug.LogError("Undefined attack");

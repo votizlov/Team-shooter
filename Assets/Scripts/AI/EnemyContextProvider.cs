@@ -17,6 +17,7 @@ public class EnemyContextProvider : MonoBehaviour, IContextProvider
     private void Awake()
     {
         _context = new MainContext {agent = agent, possibleTargets = gameProxy.allies, gun = gun,currentPos = transform};
+        gameProxy.enemies.Add(gameObject);
     }
 
     public IAIContext GetContext(Guid aiId)

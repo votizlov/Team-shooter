@@ -28,9 +28,16 @@ public class PlayerController : MonoBehaviour
 
     [SerializeField] private float speedV = 2.0f;
 
-    private float yaw = 0f;
+    private float _yaw = 0f;
 
-    private float pitch = 0f;
+    private float _pitch = 0f;
+
+    private bool _toggleMouseFollow = true;
+
+    private void Start()
+    {
+        gunPlace.transform.forward = camera.transform.forward;
+    }
 
     void Update()
     {
@@ -71,14 +78,24 @@ public class PlayerController : MonoBehaviour
 
         if (Input.GetKeyDown(settings.openAlliesMenu))
         {
+            _toggleMouseFollow = false;
             UI.OpenAlliesMenu(_alliesCommander);
         }
 
-        yaw += speedH * Input.GetAxis("Mouse X");
-        pitch -= speedV * Input.GetAxis("Mouse Y");
-        transform.eulerAngles = new Vector3(0f, yaw, 0f);
-        camera.transform.eulerAngles = new Vector3(pitch, yaw, 0f);
-        gunPlace.transform.eulerAngles = new Vector3(pitch, yaw, 0f);
+        if (Input.GetKeyUp(settings.openAlliesMenu))
+        {
+            _toggleMouseFollow = true;
+            UI.CloseAlliesMenu();
+        }
+
+        if (_toggleMouseFollow)
+        {
+            _yaw += speedH * Input.GetAxis("Mouse X");
+            _pitch -= speedV * Input.GetAxis("Mouse Y");
+            transform.eulerAngles = new Vector3(0f, _yaw, 0f);
+            camera.transform.eulerAngles = new Vector3(_pitch, _yaw, 0f);
+            gunPlace.transform.eulerAngles = new Vector3(_pitch, _yaw, 0f);
+        }
     }
 
     private void applyAcceleration(Vector3 dir)

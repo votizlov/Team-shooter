@@ -6,45 +6,38 @@
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Team-shooter/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Team-shooter/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Team-shooter/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Team-shooter/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Apex/AINameMap.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Apex/AINameMap.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/FollowPlayer.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/FollowPlayer.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Models.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Models/HumanLeg.blend" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Models/HumanLeg.blend.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Models/WoodenCabinObj.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Models/WoodenCabinObj.obj.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Models/gun.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Models/gun.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/Sparks.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/Sparks.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Allies/BasicAlly.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Allies/BasicAlly.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Classes/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Classes/Player.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Effects/Line.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Effects/Line.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Enemies/CabinEnemy.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Enemies/CabinEnemy.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Enemies/Enemy.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Enemies/Enemy.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Guns/Pistol.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Guns/Pistol.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Objects/AlliesShop.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Objects/AlliesShop.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/ApexAIStorage/SimpleAllyAI.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/ApexAIStorage/SimpleAllyAI.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/ApexAIStorage/SimpleEnemyAI.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/ApexAIStorage/SimpleEnemyAI.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level1.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AI/AIObject.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AI/AIObject.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AI/Actions/PirsuingAndAttackingTgt.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AI/Actions/PirsuingAndAttackingTgt.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AI/Actions/RotateToTarget.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AI/Actions/RotateToTarget.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AI/Actions/AttackTarget.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AI/Actions/Shoot.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AI/Actions/AttackTarget.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AI/Actions/Shoot.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AI/Actions/FollowPlayer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AI/Actions/FollowPlayer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AI/Actions/GoToPos.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AI/Actions/GoToPos.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AI/AlliesCommander.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AI/AlliesCommander.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/AI/AllyContextProvider.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AI/AllyContextProvider.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AI/EnemyContextProvider.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AI/EnemyContextProvider.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/AI/MainContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AI/MainContext.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AI/Scorers/isAgentArrived.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AI/Scorers/isAgentArrived.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AI/Scorers/isNewDestinationReceived.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AI/Scorers/isNewDestinationReceived.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Core/Game.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Core/Game.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Core/GameProxy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Core/GameProxy.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Core/UIController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Core/UIController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/DamageSystem/AttackManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/DamageSystem/AttackManager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/DamageSystem/AttackingObject.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/DamageSystem/AttackingObject.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/DamageSystem/DamagableObject.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/DamageSystem/DamagableObject.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Objects/AlliesCommandMenu.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Objects/AlliesCommandMenu.cs.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Objects/PlayerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Objects/PlayerController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TutorialInfo.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TutorialInfo/Icons.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TutorialInfo/Icons/Help_Icon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TutorialInfo/Icons/Help_Icon.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TutorialInfo/Icons/UniversalIcon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TutorialInfo/Icons/UniversalIcon.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TutorialInfo/Layout.wlt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TutorialInfo/Layout.wlt.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TutorialInfo/Scripts.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TutorialInfo/Scripts/Editor.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TutorialInfo/Scripts/Editor/ReadmeEditor.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TutorialInfo/Scripts/Editor/ReadmeEditor.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TutorialInfo/Scripts/Readme.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TutorialInfo/Scripts/Readme.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/GraphicsSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/GraphicsSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Objects/Spawner.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Objects/Spawner.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/DynamicsManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/DynamicsManager.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -60,6 +53,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Objects/Item.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Core/Pooling/PoolSetup.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Objects/Items/InventoryController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/AI/Actions/ExecutedOrderState.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/DamageSystem/AttackTypes.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Data/SettingsData.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Objects/PlayerController.cs" root0="FORCE_HIGHLIGHTING" />
@@ -69,7 +63,9 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/AI/Actions/FollowPlayer.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Prefabs/Guns/Pistol.prefab" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/ProceduralLegPlacement/CreatureController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Objects/DeleteAfterTime.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/AI/EnemyContextProvider.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/AI/Actions/ExecutingOrderState.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/DamageSystem/AttackingObject.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/DamageSystem/DamagableObject.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/DamageSystem/AttackManager.cs" root0="FORCE_HIGHLIGHTING" />
@@ -80,27 +76,27 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Core/Game.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/AI/Scorers/randomGenerator.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Core/UIController.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/AI/Actions/AttackTarget.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/AI/Actions/Shoot.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/AI/Actions/GoToPos.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Core/GameProxy.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/SimpleCameraController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Objects/Spawner.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Objects/AlliesCommandMenu.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Objects/AlliesShop.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Apex/AINameMap.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/AI/Scorers/isNewDestinationReceived.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/AI/AllyBehaviors.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/AI/Scorers/IsAttacking.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/AI/MainContext.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/AI/Scorers/isExecutingOrder.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/AI/Actions/SelectRandomDestination.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/AI/Actions/RotateToTarget.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/AI/AllyContextProvider.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/AI/Actions/FindClosestTarget.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/AI/Actions/UpdateBehavior.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Scripts/DamageSystem/DamagableObject.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Objects/Spawner.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Objects/Gun/GunTypes.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/DamageSystem/AttackTypes.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Objects/Items/InventoryController.cs" />
@@ -111,7 +107,6 @@
         <option value="$PROJECT_DIR$/Assets/FollowPlayer.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Objects/Gun/Gun.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/AI/SimpleEnemy.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Core/GameProxy.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/AI/SimpleAlly.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/AI/AIObject.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/AI/Behaviors/PirsuingAndAttackingTgt.cs" />
@@ -120,27 +115,37 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/AI/Actions/GoToTarget.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/AI/Actions/AttackTarget.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/ProceduralLegPlacement/CreatureController.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Core/Game.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/AI/EnemyContextProvider.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/AI/Actions/RotateToTarget.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/DamageSystem/AttackingObject.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/DamageSystem/AttackManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/AI/Actions/ToggleRagdoll.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/AI/AllyBehaviors.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/AI/Scorers/BehaviorChecker.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/AI/Scorers/isReceivingOrder.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/AI/Scorers/randomGenerator.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/AI/Scorers/IsAttacking.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Objects/PlayerController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/AI/Actions/UpdateOrderDestination.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/AI/MainContext.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/AI/AllyContextProvider.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Core/UIController.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/AI/AlliesCommander.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/AI/Scorers/isExecutingOrder.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/AI/Actions/ToggleOrderState.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/AI/Actions/executingOrderState.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/AI/Actions/GoToPos.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/AI/Scorers/isNewDestinationReceived.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/AI/Scorers/isAgentArrived.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/AI/Actions/ExecutedOrderState.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/AI/Actions/FollowPlayer.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/AI/Actions/SelectRandomDestination.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Core/UIController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/AI/EnemyContextProvider.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/AI/Scorers/isAgentArrived.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/AI/Actions/Shoot.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/DamageSystem/DamagableObject.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/AI/MainContext.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/AI/AlliesCommander.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Core/Game.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/AI/AllyContextProvider.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/AI/Scorers/isNewDestinationReceived.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Core/GameProxy.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Objects/DeleteAfterTime.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Objects/PlayerController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/DamageSystem/AttackManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Objects/Spawner.cs" />
       </list>
     </option>
   </component>
@@ -194,6 +199,7 @@
       <workItem from="1588519054636" duration="1621000" />
       <workItem from="1588585998295" duration="779000" />
       <workItem from="1588612487937" duration="9202000" />
+      <workItem from="1588666285039" duration="18424000" />
     </task>
     <servers />
   </component>
@@ -214,5 +220,11 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="638" y="118" width="644" height="804" key="find.popup" timestamp="1588677245318">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="638" y="118" width="644" height="804" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1588677245318" />
   </component>
 </project>

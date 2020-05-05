@@ -10,7 +10,7 @@ public class FollowPlayer : ActionBase
     {
         var c = (MainContext) context;
         c.targetPosition = c.currPlayer.gameObject.transform.position;
-        c.agent.stoppingDistance = 2;
+        c.agent.stoppingDistance = 3;
         c.agent.SetDestination(c.targetPosition);
     }
 }

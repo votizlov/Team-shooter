@@ -12,7 +12,6 @@ public class AllyContextProvider : MonoBehaviour, IContextProvider
     [SerializeField] private NavMeshAgent agent;
     [SerializeField] private GameProxy gameProxy;
     [SerializeField] private Gun gun;
-    [SerializeField] private AlliesCommander commander;
 
     private MainContext _context;
 
@@ -22,7 +21,7 @@ public class AllyContextProvider : MonoBehaviour, IContextProvider
         {
             agent = agent, possibleTargets = gameProxy.enemies, gun = gun, currentPos = transform,
             currPlayer = gameProxy.player,
-            commander = commander
+            commander = gameProxy.commander
         };
     }
 

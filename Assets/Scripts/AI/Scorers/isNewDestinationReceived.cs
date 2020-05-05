@@ -9,9 +9,10 @@ public class isNewDestinationReceived : ContextualScorerBase
     public override float Score(IAIContext context)
     {
         var c = (MainContext)context;
-        if (c.lastOrderedDestination != c.commander.AlliesDestination)
+        if (c.commander.alliesDestination != c.lastOrderedPos)
         {
-            c.lastOrderedDestination = c.commander.AlliesDestination;
+            c.targetPosition = c.commander.alliesDestination;
+            c.lastOrderedPos = c.commander.alliesDestination;
             return 3;
         }
 

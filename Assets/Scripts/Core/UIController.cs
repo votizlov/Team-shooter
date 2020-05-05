@@ -27,6 +27,15 @@ public class UIController : MonoBehaviour
         alliesMenu.SetActive(true);
     }
 
+    public void CloseAlliesMenu()
+    {
+        if (_isMenuOpened)
+        {
+            alliesMenu.SetActive(false);
+            _isMenuOpened = false;
+        }
+    }
+
     public void SpawnBoughtAlly(GameObject ally)
     {
         alliesShop.SetActive(false);
@@ -34,9 +43,9 @@ public class UIController : MonoBehaviour
         Instantiate(ally, _currShop.spawnPoint, Quaternion.identity);
     }
 
-    public void ChangeAllyBehavior(AllyBehaviors behavior)
+    public void ChangeAllyMode(int behavior)//enum нельзя передавать из кнопок, хотя эта фича была запрошена 6 лет назад
     {
-        _currCommander.allyBehavior = behavior;
+        _currCommander.allyBehavior = (AllyBehaviors) behavior;
         alliesMenu.SetActive(false);
         _isMenuOpened = false;
     }

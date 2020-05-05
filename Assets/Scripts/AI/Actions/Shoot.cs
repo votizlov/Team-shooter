@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using Apex.AI;
 using UnityEngine;
 
-public class AttackTarget : ActionBase
+public class Shoot : ActionBase
 {
     public override void Execute(IAIContext context)
     {

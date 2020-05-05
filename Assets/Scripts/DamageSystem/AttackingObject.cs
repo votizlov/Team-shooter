@@ -5,7 +5,9 @@ using UnityEngine;
 
 public class AttackingObject : MonoBehaviour
 {
-    public float range, damage, speed, reload;
+    public float range;
+    public int damage;
+    public float speed, reload;
     [SerializeField] private GameProxy gameProxy;
 
     private bool isReloading = false;

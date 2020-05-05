@@ -12,7 +12,8 @@ public class MainContext : IAIContext
     public GameObject target;
     public Transform currentPos;
     public Vector3 targetPosition;
-    public Vector3 lastOrderedDestination;
     public PlayerController currPlayer;
     public AlliesCommander commander;
+    public bool isGivenOrder = false;
+    public Vector3 lastOrderedPos;
 }
