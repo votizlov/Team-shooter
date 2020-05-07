@@ -2,18 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3c980a5b-4321-4b3a-b729-5a9d29627c24" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Team-shooter/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Team-shooter/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Team-shooter/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Team-shooter/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Team-shooter/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Team-shooter/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/FastIK/Scripts/FastIK/FastIKFabric.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FastIK/Scripts/FastIK/FastIKFabric.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Classes/Player.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Classes/Player.prefab.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level1.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Data/SettingsData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Data/SettingsData.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Objects/PlayerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Objects/PlayerController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Settings/Settings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Settings/Settings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Core/Game.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Core/Game.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Networking/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Networking/GameManager.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -130,13 +122,13 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/AI/EnemyContextProvider.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/AI/AllyContextProvider.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Core/GameProxy.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Core/Game.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Core/MainMenuController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Networking/LobbyManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Objects/PlayerController.cs" />
         <option value="$PROJECT_DIR$/Assets/FastIK/Scripts/FastIK/FastIKFabric.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Networking/GameManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Data/SettingsData.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Core/MainMenuController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Core/Game.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Networking/GameManager.cs" />
       </list>
     </option>
   </component>
@@ -192,7 +184,7 @@
       <workItem from="1588612487937" duration="9202000" />
       <workItem from="1588666285039" duration="24731000" />
       <workItem from="1588789657955" duration="6553000" />
-      <workItem from="1588841326300" duration="11054000" />
+      <workItem from="1588841326300" duration="12004000" />
     </task>
     <servers />
   </component>

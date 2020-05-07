@@ -25,7 +25,6 @@ namespace Core
             gameProxy.UI = UI;
             gameProxy.allies = new List<GameObject>();
             gameProxy.enemies = new List<GameObject>();
-            gameProxy.allies.Add(currentplayer.gameObject);
         }
     }
 }
