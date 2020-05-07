@@ -21,3 +21,5 @@ MonoBehaviour:
   reload: 114
   interaction: 101
   openAlliesMenu: 113
+  playerName: ayylmao
+  gameVersion: 0.0.0.1

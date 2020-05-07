@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 
 namespace Data
 {
@@ -14,5 +15,7 @@ namespace Data
         public KeyCode reload;
         public KeyCode interaction;
         public KeyCode openAlliesMenu;
+        public String playerName;
+        public String gameVersion;
     }
 }

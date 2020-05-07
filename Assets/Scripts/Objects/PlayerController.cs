@@ -3,11 +3,12 @@ using AI;
 using Core;
 using Data;
 using Objects.Items;
+using Photon.Pun;
 using UnityEngine;
 
 namespace Objects
 {
-    public class PlayerController : MonoBehaviour
+    public class PlayerController : MonoBehaviour, IPunObservable
     {
         public event Action<PlayerController> OnInteract;
 
@@ -104,6 +105,20 @@ namespace Objects
         private void applyAcceleration(Vector3 dir)
         {
             rigidbody.AddForce(dir * speed);
+        }
+
+        public void OnPhotonSerializeView(PhotonStream stream, PhotonMessageInfo info)
+        {
+            if (stream.IsWriting)
+            {
+                Vector3 pos = transform.localPosition;
+                stream.Serialize(ref pos);
+            }
+            else
+            {
+                Vector3 pos = Vector3.zero;
+                stream.Serialize(ref pos);  // pos gets filled-in. must be used somewhere
+            }
         }
     }
 }
